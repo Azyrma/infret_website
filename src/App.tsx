@@ -9,7 +9,7 @@ function App() {
       <section className="hero">
         <div className="avatar-placeholder">SM</div>
         <h1>Severin Mills</h1>
-        <p className="role">Information Retrieval</p>
+        <p className="role"><a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=198419&semkez=2026S&ansicht=ALLE&lang=de">Information Retrieval</a></p>
         <p className="semester">Spring 2026 · ETH Zürich</p>
       </section>
 
