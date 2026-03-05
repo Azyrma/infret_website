@@ -1,4 +1,6 @@
 import './App.css'
+import infretWeek1 from './assets/infret_week1.pdf'
+import infretWeek2 from './assets/infret_week2.pdf'
 
 function App() {
   return (
@@ -11,11 +13,31 @@ function App() {
         <p className="semester">Spring 2026 · ETH Zürich</p>
       </section>
 
-      {/* About */}
+      {/* About
       <section className="card">
         <h2>About Me</h2>
         <p>
-          Hi! I'm a third-year Bachelor's student in Computer Science. 
+          Hi! I'm a third-year Bachelor's student in Computer Science. Currently working as a TA in Information Retrieval
+        </p>
+      </section> */}
+
+      {/* Lecture */}
+      <section className="card">
+        <h2>Lecture Information</h2>
+        <p>
+          There are weekly quizzes and Jupyter Notebooks that you may solve as an exercise. I would recommend to do the weekly quizzes at least, since they will give you the most benefit for the exam. 
+        </p>
+        <br></br>
+        <p>
+          There is an opportunity to receive bonus points, up to 0.25, which will count towards your final grade. The bonus consists of three of the weekly quizzes, from which you will need to get the required points from two of them, on the dates specified below:
+          <ul>
+            <li> 13.03 Tolerant Retrieval </li>
+            <li> 27.03 Index Compression </li>
+            <li> 24.04 Vector Space Model </li>
+          </ul>
+          
+
+          It is possible to pass the quizzes without solving the Jupyter-Notebook, but I would recommend to solve it in the week with the bonuses. The time limit for each quiz is one week, you have two attempts.
         </p>
       </section>
 
@@ -70,14 +92,14 @@ function App() {
             <tr>
               <td>1</td>
               <td>Introduction</td>
-              <td><a href="#">Slides</a></td>
-              <td>—</td>
+              <td><a href={infretWeek1}>Slides</a></td>
+              <td><a href={"https://create.kahoot.it/share/information-retrieval-introduction/4e5bc650-e58a-402b-9a63-55bd99ed6496"}>Kahoot</a></td>
             </tr>
             <tr>
               <td>2</td>
               <td>Boolean Retrieval</td>
-              <td>—</td>
-              <td>—</td>
+              <td><a href={infretWeek2}>Slides</a></td>
+              <td><a href={"https://create.kahoot.it/share/ir-week-ii-boolean-retrieval/b04521d6-eedd-46c2-8e91-959ee741809f"}>Kahoot</a></td>
             </tr>
             <tr>
               <td>3</td>
