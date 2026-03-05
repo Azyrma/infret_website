@@ -1,0 +1,204 @@
+/* Reset & layout */
+#root {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  text-align: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #646cff;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  letter-spacing: 0.03em;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+.role {
+  font-size: 1rem;
+  color: #646cff;
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+}
+
+.semester {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin: 0;
+}
+
+/* Sections */
+.card {
+  padding: 2rem 0;
+  border-top: 1px solid var(--divider);
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  margin: 0 0 1rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Office hours table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+
+tr + tr td {
+  padding-top: 0.6rem;
+}
+
+td {
+  padding: 0;
+  line-height: 1.6;
+}
+
+td.day {
+  font-weight: 600;
+  width: 110px;
+}
+
+td.location {
+  text-align: right;
+  opacity: 0.55;
+  font-size: 0.9rem;
+}
+
+/* Exercises table */
+.exercises-table {
+  margin-bottom: 0;
+}
+
+.exercises-table thead th {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.4;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--divider);
+}
+
+
+.exercises-table tbody td {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--divider);
+  vertical-align: middle;
+}
+
+.exercises-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.exercises-table td:first-child {
+  width: 60px;
+  opacity: 0.5;
+}
+
+.exercises-table td:nth-last-child(2),
+.exercises-table th:nth-last-child(2) {
+  width: 80px;
+  text-align: right;
+}
+
+.exercises-table td:last-child,
+.exercises-table th:last-child {
+  width: 80px;
+  text-align: right;
+}
+
+.note {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin: 0;
+}
+
+/* Contact list */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+/* Resource list */
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resource-list a::before {
+  content: '→ ';
+  opacity: 0.4;
+}
+
+/* Theme variables */
+:root {
+  --divider: rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --divider: #e2e2e4;
+  }
+
+  .avatar-placeholder {
+    background: #535bf2;
+  }
+}
