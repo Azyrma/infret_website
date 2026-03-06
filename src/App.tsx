@@ -1,6 +1,7 @@
 import './App.css'
 import infretWeek1 from './assets/infret_week1.pdf'
 import infretWeek2 from './assets/infret_week2.pdf'
+import infretWeek3 from './assets/infret_week3.pdf'
 
 function App() {
   return (
@@ -104,7 +105,7 @@ function App() {
             <tr>
               <td>3</td>
               <td>Term Vocabulary</td>
-              <td>—</td>
+              <td><a href={infretWeek3}>Slides</a></td>
               <td>—</td>
             </tr>
           </tbody>
