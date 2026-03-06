@@ -1,7 +1,7 @@
-@import '@fontsource-variable/source-serif-4';
+@import '@fontsource-variable/inter';
 
 :root {
-  font-family: 'Source Serif 4 Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
