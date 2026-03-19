@@ -2,6 +2,8 @@ import './App.css'
 import infretWeek1 from './assets/infret_week1.pdf'
 import infretWeek2 from './assets/infret_week2.pdf'
 import infretWeek3 from './assets/infret_week3.pdf'
+import infretWeek4 from './assets/infret_week4.pdf'
+import infretWeek5 from './assets/infret_week5.pdf'
 
 function App() {
   return (
@@ -106,10 +108,28 @@ function App() {
               <td>3</td>
               <td>Term Vocabulary</td>
               <td><a href={infretWeek3}>Slides</a></td>
-              <td>—</td>
+              <td><a href={"https://create.kahoot.it/details/f6631349-f63b-4c88-9cc2-c1bf9d140451"}>Kahoot</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Tolerant Retrieval</td>
+              <td><a href={infretWeek4}>Slides (from previous year)</a></td>
+              <td><a href={"https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e"}>Kahoot</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Term Vocabulary</td>
+              <td><a href={infretWeek5}>Slides</a></td>
+              <td><a href={"https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74"}>Kahoot</a></td>
             </tr>
           </tbody>
         </table>
+      </section>
+
+      <section className="card">
+        <h2>Questions</h2>
+        There was a question in Week 3: Tolerant Retrieval about
       </section>
 
       {/* Resources */}
