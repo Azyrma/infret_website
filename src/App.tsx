@@ -118,8 +118,8 @@ function App() {
               <td><a href={"https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e"}>Kahoot</a></td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>Term Vocabulary</td>
+              <td>5</td>
+              <td>Index Construction</td>
               <td><a href={infretWeek5}>Slides</a></td>
               <td><a href={"https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74"}>Kahoot</a></td>
             </tr>
