@@ -12,8 +12,8 @@ const exercises = [
   { week: '01', title: 'Introduction',      slides: infretWeek1, kahoot: 'https://create.kahoot.it/share/information-retrieval-introduction/4e5bc650-e58a-402b-9a63-55bd99ed6496' },
   { week: '02', title: 'Boolean Retrieval',  slides: infretWeek2, kahoot: 'https://create.kahoot.it/share/ir-week-ii-boolean-retrieval/b04521d6-eedd-46c2-8e91-959ee741809f' },
   { week: '03', title: 'Term Vocabulary',    slides: infretWeek3, kahoot: 'https://create.kahoot.it/details/f6631349-f63b-4c88-9cc2-c1bf9d140451' },
-  { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' },
-  { week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
+  { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' }
+  //{ week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
 ]
 
 const resources = [
