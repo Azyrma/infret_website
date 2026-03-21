@@ -3,7 +3,7 @@ import infretWeek1 from './assets/infret_week1.pdf'
 import infretWeek2 from './assets/infret_week2.pdf'
 import infretWeek3 from './assets/infret_week3.pdf'
 import infretWeek4 from './assets/infret_week4.pdf'
-import infretWeek5 from './assets/infret_week5.pdf'
+//import infretWeek5 from './assets/infret_week5.pdf'
 
 // ── Data ────────────────────────────────────────────────
 // To add a new week: just add an entry here.
