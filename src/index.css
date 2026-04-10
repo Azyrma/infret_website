@@ -8,36 +8,36 @@
 @theme {
   --font-sans: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-  --color-terminal: #00ff41;
-  --color-terminal-dim: #00cc33;
-  --color-terminal-muted: #00aa2a;
-  --color-glow: rgba(0, 255, 65, 0.08);
-  --color-glow-strong: rgba(0, 255, 65, 0.15);
-  --color-surface: #0a0e0a;
-  --color-surface-raised: #0f1610;
-  --color-border-hacker: rgba(0, 255, 65, 0.12);
+  --color-accent: #6ea1ff;
+  --color-accent-dim: #5a8ae0;
+  --color-accent-muted: #4a7acc;
+  --color-glow: rgba(110, 161, 255, 0.06);
+  --color-glow-strong: rgba(110, 161, 255, 0.12);
+  --color-surface: #101318;
+  --color-surface-raised: #181c24;
+  --color-border-subtle: rgba(148, 175, 220, 0.1);
 }
 
 body {
   background: var(--color-surface);
-  color: #c8d6c8;
+  color: #c8cdd6;
+  font-family: var(--font-sans);
 }
 
 ::selection {
-  background: var(--color-terminal);
-  color: #000;
+  background: var(--color-accent);
+  color: #fff;
 }
 
 a {
-  color: var(--color-terminal);
+  color: var(--color-accent);
   text-decoration: none;
-  transition: color 0.15s, text-shadow 0.15s;
+  transition: color 0.15s;
 }
 
 a:hover {
-  color: #33ff66;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
-  text-decoration: none;
+  color: #8bb8ff;
+  text-decoration: underline;
 }
 
 code {

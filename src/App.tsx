@@ -3,7 +3,8 @@ import infretWeek1 from './assets/infret_week1.pdf'
 import infretWeek2 from './assets/infret_week2.pdf'
 import infretWeek3 from './assets/infret_week3.pdf'
 import infretWeek4 from './assets/infret_week4.pdf'
-//import infretWeek5 from './assets/infret_week5.pdf'
+import infretWeek5 from './assets/infret_week5-1.pdf'
+import infretWeek6 from './assets/infret_week6.pdf'
 
 // ── Data ────────────────────────────────────────────────
 // To add a new week: just add an entry here.
@@ -12,8 +13,9 @@ const exercises = [
   { week: '01', title: 'Introduction',      slides: infretWeek1, kahoot: 'https://create.kahoot.it/share/information-retrieval-introduction/4e5bc650-e58a-402b-9a63-55bd99ed6496' },
   { week: '02', title: 'Boolean Retrieval',  slides: infretWeek2, kahoot: 'https://create.kahoot.it/share/ir-week-ii-boolean-retrieval/b04521d6-eedd-46c2-8e91-959ee741809f' },
   { week: '03', title: 'Term Vocabulary',    slides: infretWeek3, kahoot: 'https://create.kahoot.it/details/f6631349-f63b-4c88-9cc2-c1bf9d140451' },
-  { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' }
-  //{ week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
+  { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' },
+  { week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
+  { week: '06', title: 'Index Compression', slides: infretWeek6, kahoot: 'https://create.kahoot.it/share/information-retrieval-index-compression/eab34273-e603-4ba3-a617-2a2130efabdb' }
 ]
 
 const resources = [
@@ -25,12 +27,10 @@ const resources = [
 
 // ── Helpers ─────────────────────────────────────────────
 
-function Section({ cmd, children }: { cmd: string; children: React.ReactNode }) {
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="section">
-      <h2 className="section-title">
-        <span className="prompt">$</span> {cmd}
-      </h2>
+      <h2 className="section-title">{title}</h2>
       {children}
     </section>
   )
@@ -49,23 +49,22 @@ function CodeBlock({ children }: { children: React.ReactNode }) {
 function App() {
   return (
     <div className="page">
-      <div className="scanlines" />
       <div className="content">
 
         {/* Hero */}
         <div className="hero">
-          <p className="hero-pre">&gt; session.init()</p>
+          <p className="hero-pre">Teaching Assistant</p>
           <h1>Severin Mills</h1>
           <p className="subtitle">
             <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=198419&semkez=2026S&ansicht=ALLE&lang=de">
               Information Retrieval
             </a>
           </p>
-          <p className="meta">Spring 2026 // ETH Z&uuml;rich</p>
+          <p className="meta">Spring 2026 &middot; ETH Z&uuml;rich</p>
         </div>
 
         {/* Lecture Information */}
-        <Section cmd="lecture_info">
+        <Section title="Lecture Information">
           <p>
             There are weekly quizzes and Jupyter Notebooks that you may solve as an exercise. I
             would recommend to do the weekly quizzes at least, since they will give you the most
@@ -76,10 +75,10 @@ function App() {
             your final grade. The bonus consists of three of the weekly quizzes, from which you
             will need to get the required points from two of them, on the dates specified below:
           </p>
-          <ul className="term-list">
-            <li><span className="bullet">&gt;</span> 13.03 Tolerant Retrieval (Done!)</li>
-            <li><span className="bullet">&gt;</span> 27.03 Index Compression</li>
-            <li><span className="bullet">&gt;</span> 24.04 Vector Space Model</li>
+          <ul className="info-list">
+            <li><span className="bullet">&bull;</span> 13.03 Tolerant Retrieval (Done!)</li>
+            <li><span className="bullet">&bull;</span> 27.03 Index Compression</li>
+            <li><span className="bullet">&bull;</span> 24.04 Vector Space Model</li>
           </ul>
           <p>
             It is possible to pass the quizzes without solving the Jupyter-Notebook, but I would
@@ -89,28 +88,28 @@ function App() {
         </Section>
 
         {/* Schedule */}
-        <Section cmd="schedule">
-          <table className="hacker-table">
+        <Section title="Schedule">
+          <table className="data-table">
             <tbody>
               <tr className="bordered">
-                <td className="mono bold">Friday</td>
+                <td className="bold">Friday</td>
                 <td className="mono">10:15 &ndash; 12:00</td>
-                <td className="right small mono">CAB G 11</td>
+                <td className="right small">CAB G 11</td>
               </tr>
               <tr>
-                <td className="mono bold">Friday</td>
+                <td className="bold">Friday</td>
                 <td className="mono">16:15 &ndash; 17:00</td>
-                <td className="right small mono">CAB G 51</td>
+                <td className="right small">CAB G 51</td>
               </tr>
             </tbody>
           </table>
           <p className="comment">
-            // No lectures on 03.04 (Good Friday), 10.04 (Easter), 01.05 (Labour Day)
+            No lectures on 03.04 (Good Friday), 10.04 (Easter), 01.05 (Labour Day)
           </p>
         </Section>
 
         {/* Contact */}
-        <Section cmd="contact">
+        <Section title="Contact">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             <div className="contact-row">
               <span className="contact-label">Email</span>
@@ -124,8 +123,8 @@ function App() {
         </Section>
 
         {/* Exercises */}
-        <Section cmd="exercises --list">
-          <table className="hacker-table">
+        <Section title="Exercises">
+          <table className="data-table">
             <thead>
               <tr className="bordered">
                 <th style={{ width: '3rem' }}>#</th>
@@ -134,10 +133,10 @@ function App() {
                 <th className="right">Extra</th>
               </tr>
             </thead>
-            <tbody className="mono">
+            <tbody>
               {exercises.map((ex, i) => (
                 <tr key={ex.week} className={i < exercises.length - 1 ? 'bordered' : ''}>
-                  <td className="dim">{ex.week}</td>
+                  <td className="dim mono">{ex.week}</td>
                   <td>
                     {ex.title}
                     {ex.note && <span className="small"> {ex.note}</span>}
@@ -151,9 +150,9 @@ function App() {
         </Section>
 
         {/* Questions */}
-        <Section cmd="questions">
+        <Section title="Questions">
           <details className="question">
-            <summary className="heading-green">
+            <summary>
               Week 3: Tolerant Retrieval &mdash; Skip List Comparisons
             </summary>
           <p>
@@ -177,7 +176,7 @@ function App() {
             <li><span className="num">3.</span> Skip pointers exist on only one list.</li>
           </ol>
 
-          <p className="heading-green" style={{ marginTop: '1.25rem' }}>
+          <p className="heading-accent" style={{ marginTop: '1.25rem' }}>
             Counterexample to the shortcut formula
           </p>
           <p>
@@ -185,7 +184,7 @@ function App() {
             skip pointer <Code>1&rarr;10</Code>, and list 2: <Code>0 &rarr; 11</Code>.
           </p>
           <p>The baseline (no skips) is 5 comparisons, with p2 advancing once. With skips:</p>
-          <table className="hacker-table" style={{ marginTop: '0.5rem' }}>
+          <table className="data-table" style={{ marginTop: '0.5rem' }}>
             <thead>
               <tr className="bordered">
                 <th>p1</th>
@@ -223,18 +222,18 @@ function App() {
         </Section>
 
         {/* Resources */}
-        <Section cmd="resources">
+        <Section title="Resources">
           <ul className="resource-list">
             {resources.map((r) => (
               <li key={r.href}>
-                <span className="arrow">&gt;</span>
+                <span className="arrow">&rarr;</span>
                 <a href={r.href}>{r.label}</a>
               </li>
             ))}
           </ul>
         </Section>
 
-        <div className="footer">&gt; _</div>
+        <div className="footer">Information Retrieval &middot; ETH Z&uuml;rich &middot; 2026</div>
       </div>
     </div>
   )
