@@ -5,6 +5,7 @@ import infretWeek3 from './assets/infret_week3.pdf'
 import infretWeek4 from './assets/infret_week4.pdf'
 import infretWeek5 from './assets/infret_week5-1.pdf'
 import infretWeek6 from './assets/infret_week6.pdf'
+import infretWeek7 from './assets/infret_week7.pdf'
 
 // ── Data ────────────────────────────────────────────────
 // To add a new week: just add an entry here.
@@ -15,7 +16,8 @@ const exercises = [
   { week: '03', title: 'Term Vocabulary',    slides: infretWeek3, kahoot: 'https://create.kahoot.it/details/f6631349-f63b-4c88-9cc2-c1bf9d140451' },
   { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' },
   { week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
-  { week: '06', title: 'Index Compression', slides: infretWeek6, kahoot: 'https://create.kahoot.it/share/information-retrieval-index-compression/eab34273-e603-4ba3-a617-2a2130efabdb' }
+  { week: '06', title: 'Index Compression', slides: infretWeek6, kahoot: 'https://create.kahoot.it/share/information-retrieval-index-compression/eab34273-e603-4ba3-a617-2a2130efabdb' },
+  { week: '07', title: 'Ranked Retrieval', slides: infretWeek7, kahoot: 'https://create.kahoot.it/share/information-retrieval-ranked-retrieval/4ce4ee62-9d8b-478c-b73f- 8876e8ec77ef' },
 ]
 
 const resources = [
