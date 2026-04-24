@@ -6,6 +6,7 @@ import infretWeek4 from './assets/infret_week4.pdf'
 import infretWeek5 from './assets/infret_week5-1.pdf'
 import infretWeek6 from './assets/infret_week6.pdf'
 import infretWeek7 from './assets/infret_week7.pdf'
+import infretWeek8 from './assets/infret_week8.pdf'
 
 // ── Data ────────────────────────────────────────────────
 // To add a new week: just add an entry here.
@@ -18,6 +19,8 @@ const exercises = [
   { week: '05', title: 'Index Construction', slides: infretWeek5, kahoot: 'https://create.kahoot.it/share/ex-04-index-construction/89fc6ef7-2262-4924-888d-9549940c0e74' },
   { week: '06', title: 'Index Compression', slides: infretWeek6, kahoot: 'https://create.kahoot.it/share/information-retrieval-index-compression/eab34273-e603-4ba3-a617-2a2130efabdb' },
   { week: '07', title: 'Ranked Retrieval', slides: infretWeek7, kahoot: 'https://create.kahoot.it/share/information-retrieval-ranked-retrieval/4ce4ee62-9d8b-478c-b73f- 8876e8ec77ef' },
+  { week: '08', title: 'Vector Space Model', slides: infretWeek8, kahoot: 'https://create.kahoot.it/details/duplicate-of-information-retrieval-ex-07-vector-space-models-mschoeb/d790da6e-9dd4-4191-bdd5-e71a97d32ca3?drawer=' },
+  { week: '09', title: 'Champion Lists', slidesText: 'See week 8', kahootText: 'See week 8' }
 ]
 
 const resources = [
@@ -143,8 +146,8 @@ function App() {
                     {ex.title}
                     {ex.note && <span className="small"> {ex.note}</span>}
                   </td>
-                  <td className="right"><a href={ex.slides}>[pdf]</a></td>
-                  <td className="right"><a href={ex.kahoot}>[kahoot]</a></td>
+                  <td className="right">{ex.slides ? <a href={ex.slides}>[pdf]</a> : <span className="dim">{ex.slidesText}</span>}</td>
+                  <td className="right">{ex.kahoot ? <a href={ex.kahoot}>[kahoot]</a> : <span className="dim">{ex.kahootText}</span>}</td>
                 </tr>
               ))}
             </tbody>
