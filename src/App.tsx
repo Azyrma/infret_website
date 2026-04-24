@@ -68,6 +68,16 @@ function App() {
           <p className="meta">Spring 2026 &middot; ETH Z&uuml;rich</p>
         </div>
 
+        {/* Disclaimer */}
+        <div className="disclaimer">
+          <span className="disclaimer-icon">&#9888;</span>
+          <p>
+            This is an <strong>unofficial</strong> resource and not affiliated with or endorsed by ETH
+            Z&uuml;rich. Slides and other materials may contain mistakes. Always refer to the official
+            course materials and lecture slides for authoritative content.
+          </p>
+        </div>
+
         {/* Lecture Information */}
         <Section title="Lecture Information">
           <p>
