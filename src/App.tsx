@@ -33,7 +33,7 @@ const resources = [
 const bonusDates = [
   { date: '13.03', topic: 'Tolerant Retrieval', done: true },
   { date: '27.03', topic: 'Index Compression',  done: true },
-  { date: '24.04', topic: 'Vector Space Model', done: false },
+  { date: '24.04', topic: 'Vector Space Model', done: true },
 ]
 
 // ── Helpers ─────────────────────────────────────────────
