@@ -7,12 +7,14 @@ import infretWeek5 from './assets/infret_week5-1.pdf'
 import infretWeek6 from './assets/infret_week6.pdf'
 import infretWeek7 from './assets/infret_week7.pdf'
 import infretWeek8 from './assets/infret_week8.pdf'
+import infretWeek10 from './assets/infret_week10-1.pdf'
+
 import { useState } from 'react'
 
 // ── Data ────────────────────────────────────────────────
 
 const exercises = [
-  { week: '01', title: 'Introduction',      slides: infretWeek1, kahoot: 'https://create.kahoot.it/share/information-retrieval-introduction/4e5bc650-e58a-402b-9a63-55bd99ed6496' },
+  { week: '01', title: 'Introduction',       slides: infretWeek1, kahoot: 'https://create.kahoot.it/share/information-retrieval-introduction/4e5bc650-e58a-402b-9a63-55bd99ed6496' },
   { week: '02', title: 'Boolean Retrieval',  slides: infretWeek2, kahoot: 'https://create.kahoot.it/share/ir-week-ii-boolean-retrieval/b04521d6-eedd-46c2-8e91-959ee741809f' },
   { week: '03', title: 'Term Vocabulary',    slides: infretWeek3, kahoot: 'https://create.kahoot.it/details/f6631349-f63b-4c88-9cc2-c1bf9d140451' },
   { week: '04', title: 'Tolerant Retrieval', slides: infretWeek4, kahoot: 'https://create.kahoot.it/details/87bc0fc2-c901-4fcf-8d6f-9bbae17da58e', note: '(prev. year)' },
@@ -21,6 +23,7 @@ const exercises = [
   { week: '07', title: 'Ranked Retrieval',   slides: infretWeek7, kahoot: 'https://create.kahoot.it/share/information-retrieval-ranked-retrieval/4ce4ee62-9d8b-478c-b73f-8876e8ec77ef' },
   { week: '08', title: 'Vector Space Model', slides: infretWeek8, kahoot: 'https://create.kahoot.it/details/duplicate-of-information-retrieval-ex-07-vector-space-models-mschoeb/d790da6e-9dd4-4191-bdd5-e71a97d32ca3' },
   { week: '09', title: 'Champion Lists',     slidesText: 'See week 8', kahootText: 'See week 8' },
+  { week: '10', title: 'Evaluation',         slides: infretWeek10, kahoot: 'https://create.kahoot.it/details/4b14f751-21e2-4baf-95ba-6b5e94ccd78e?drawer=' },
 ]
 
 const resources = [
