@@ -9,6 +9,7 @@ import infretWeek7 from "./assets/infret_week7.pdf";
 import infretWeek8 from "./assets/infret_week8.pdf";
 import infretWeek10 from "./assets/infret_week10-1.pdf";
 import infretWeek11 from "./assets/infret_week11-1.pdf";
+import infretWeek12 from "./assets/infret_week12-1.pdf";
 
 import { useState } from "react";
 
@@ -101,7 +102,7 @@ const exercises = [
   {
     week: "13",
     title: "Summary",
-    slides: "",
+    slides: infretWeek12,
     kahoot: "",
   },
 ];
