@@ -87,10 +87,22 @@ const exercises = [
   },
   {
     week: "11",
-    title: "Probabilistic Retrieval, Language Models",
+    title: "Probabilistic Retrieval",
     slides: infretWeek11,
     kahoot:
       "https://create.kahoot.it/share/incomplete-information-retrieval-probabilistic-retreival/d01d9bd5-1220-468b-a793-2e5f1146d8e2",
+  },
+  {
+    week: "12",
+    title: "Language Models",
+    slidesText: "See week 11",
+    kahootText: "See week 11",
+  },
+  {
+    week: "13",
+    title: "Summary",
+    slides: "",
+    kahoot: "",
   },
 ];
 
