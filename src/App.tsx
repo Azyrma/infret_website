@@ -103,7 +103,8 @@ const exercises = [
     week: "13",
     title: "Summary",
     slides: infretWeek12,
-    kahoot: "",
+    kahoot:
+      "https://create.kahoot.it/share/ir-final-kahoot/5f73dd1b-482e-4ada-9419-e667080a838b",
   },
 ];
 
